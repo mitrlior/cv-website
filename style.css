@@ -100,6 +100,7 @@ body {
 .cv-section__bullets {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  margin-left: 3rem;
 }
 
 .cv-section__bullet {
