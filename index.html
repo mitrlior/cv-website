@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="index.js"></script>
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="cv">
+      <button id="cv-download" onclick="generatePDF()"></button>
+
+      <p class="cv__title">Full Stack Developer</p>
+      <p class="cv__subtitle">JavaScript \ TypeScript \ Python \ Java</p>
+      <p class="cv__name">Lior Mitrany</p>
+      <section class="Horizontal-list">
+        <ul class="Horizontal__list">
+          <li class="Horizontal__list--item">054-542-7332</li>
+          <li class="Horizontal__list--item">
+            <a href="mailto:mitrlior@gmail.com">mitrlior@gmail.com</a>
+          </li>
+          <li class="Horizontal__list--item">
+            <a href="https://www.linkedin.com/in/lior-mitrany-4221711a5/"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="cv-section">
+        <p class="cv-section__title">Summary</p>
+        <p class="cv-section__subtitle secondary">
+          <b>SaaS, B2B, B2C</b> - Regulatory database for customers and
+          businesses
+        </p>
+        <ul class="cv-section__bullets">
+          <li class="cv-section__bullet">
+            <b>1 year of experience as a Backend Developer</b> in
+            <b>Hi-tech SaaS company</b> using <b>JavaScript</b> and
+            <b>TypeScript</b>
+          </li>
+          <li class="cv-section__bullet">
+            Experience with <b>large-scale SQL / NoSQL </b> databases
+          </li>
+          <li class="cv-section__bullet">
+            Collaborated with various cross functional teams in
+            <b>Agile environment</b>
+          </li>
+          <li class="cv-section__bullet">
+            Knowledge in <b>OOP</b> and <b>design patterns</b>
+          </li>
+          <li class="cv-section__bullet">
+            Proficient in languages <b>JavaScript</b>, <b>TypeScript</b> and
+            <b>Python</b>
+          </li>
+          <li class="cv-section__bullet">
+            Knowledge development using <b>Microservices</b> architecture
+          </li>
+          <li class="cv-section__bullet">
+            Practical experience in <b>Linux / AWS / Git</b>
+          </li>
+          <li class="cv-section__bullet">
+            <b>B.Sc. in Software Engineering - Final Project</b> with
+            <b>Flask, React Native</b>
+          </li>
+        </ul>
+      </section>
+      <section class="cv-section">
+        <p class="cv-section__title">Experience</p>
+        <p class="cv-section__subtitle">
+          2022 - Present&emsp;<b>Backend Developer</b>, Fyllo
+        </p>
+        <ul class="cv-section__bullets">
+          <li class="cv-section__bullet">
+            Part of a <b>global team with 5 developers</b>, and
+            <b>3 data analysts</b>
+          </li>
+          <li class="cv-section__bullet">
+            Designed and developed software using
+            <b>TypeScript, Node, AWS, Docker, Linux</b> and <b>Postgres</b> to
+            optimize the integration with the company's
+            <b>Regulatory Database</b> through precise data import and
+            conversion
+          </li>
+          <li class="cv-section__bullet">
+            Developed a high-performing <b>web scraper</b> using
+            <b>JavaScript, Node, Cheerio, Puppeteer, Postgres</b>, and
+            <b>MongoDB</b> that effectively extracts data from over 20,000
+            websites, improving data-gathering and efficiency
+          </li>
+          <li class="cv-section__bullet">
+            Presenting <b>POC’s</b> and automated reports for different
+            stakeholders
+          </li>
+          <li class="cv-section__bullet">
+            Working closely with different teams abroad including <b>DevOps</b>,
+            and other developing teams
+          </li>
+          <li class="cv-section__bullet">
+            Working experience in an <b>Agile environment</b>
+          </li>
+          <li class="cv-section__bullet">
+            Working with <b>OOP</b> and <b>design patterns</b>
+          </li>
+        </ul>
+        <p class="cv-section__subtitle">
+          2021 - 2022&emsp;<b>Noc Engineer</b>, Telemessage
+        </p>
+        <p class="cv-section__subtitle secondary">
+          <b>SaaS, B2B</b> - SMS messaging and archiving messages.
+        </p>
+        <ul class="cv-section__bullets">
+          <li class="cv-section__bullet">
+            Monitored the company’s services and servers
+          </li>
+          <li class="cv-section__bullet">
+            Writing automated tools using <b>Selenium</b> and <b>Python</b>
+          </li>
+          <li class="cv-section__bullet">Tier 2 customer support</li>
+        </ul>
+      </section>
+      <section class="cv-section">
+        <p class="cv-section__title">Education and courses</p>
+        <p class="cv-section__subtitle">
+          2018 - 2022 Bsc. Software Engineer, Afeka College of Engineering
+        </p>
+        <ul class="cv-section__bullets">
+          <li class="cv-section__bullet">
+            Bachelor of Science in Software Engineering Majoring in Artificial
+            Intelligence
+          </li>
+          <li class="cv-section__bullet">
+            <b>Final Project</b> - Bird identifying app developed using
+            <b>Python, OpenCV</b>, and <b>Neural Networks</b>. The client-side
+            uses <b>React Native</b>, while the server side is built with
+            <b>Flask</b> and <b>Heroku</b> using <b>AWS S3</b>
+          </li>
+        </ul>
+        <p class="cv-section__subtitle">
+          2022&emsp;REST APIs with Flask and Python, Udemy
+        </p>
+        <p class="cv-section__subtitle">CSS - The Complete Guide 2023</p>
+      </section>
+      <section class="cv-section">
+        <p class="cv-section__title">Technical skills</p>
+        <ul class="cv-section__bullets">
+          <li class="cv-section__bullet">
+            Programming languages: <b>JavaScript</b>, Node.js, TypeScript,
+            <b>Python</b>, <b>Flask</b> <b>Java</b>, <b>Spring</b>, SQL
+          </li>
+          <li class="cv-section__bullet">Databases: Postgres, MongoDB</li>
+          <li class="cv-section__bullet">
+            Software Tools: Webstorm, PyCharm, Vs code, Eclipse
+          </li>
+        </ul>
+      </section>
+      <section class="cv-section">
+        <p class="cv-section__title">Military Service</p>
+        <p class="cv-section__subtitle">
+          2015 - 2016&emsp;IDF- Operational Communication Center Manager unit
+          383
+        </p>
+        <ul class="cv-section__bullets">
+          <li class="cv-section__bullet">
+            24/7 working center with 15 soldiers at a time under my liability
+          </li>
+          <li class="cv-section__bullet">
+            Giving communications support to all army arms
+          </li>
+          <li class="cv-section__bullet">
+            Manager of the ROIP MATKAL Core on a high level
+          </li>
+        </ul>
+        <p class="cv-section__subtitle">
+          2013 - 2015&emsp;IDF - Communication Equipment Technician in Unit 388
+        </p>
+        <ul class="cv-section__bullets">
+          <li class="cv-section__bullet">
+            3rd tier responsible for fixing communication equipment in the lab
+            environment
+          </li>
+          <li class="cv-section__bullet">
+            Maintenance of communication equipment
+          </li>
+        </ul>
+      </section>
+      <section class="cv-section"></section>
+
+      <section class="cv-section">
+        <p class="cv-section__title">Extracurricular Activity</p>
+        <p class="cv-section__subtitle">
+          2014 - present <b>FRC Mentor</b>, FIRST <b>Robotics</b>
+        </p>
+        <ul class="cv-section__bullets">
+          <li class="cv-section__bullet">
+            Tutored Robot programming using <b>Java</b>
+          </li>
+          <li class="cv-section__bullet">
+            Provided ongoing help hands-on in building and designing the robot
+          </li>
+          <li class="cv-section__bullet">
+            Competed in the FRC world Championship two years in a row
+          </li>
+        </ul>
+      </section>
+      <section class="cv-section">
+        <p class="cv-section__title">Languages</p>
+        <ul class="Horizontal-list">
+          <li class="Horizontal__list--item"><b>Hebrew</b> - native</li>
+          <li class="Horizontal__list--item"><b>English</b> - fluent</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

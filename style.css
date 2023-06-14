@@ -1,0 +1,134 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+#canvas {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+#cv {
+  color: black;
+  background: white;
+  opacity: 0.8;
+  flex: 1;
+  width: 80vw;
+  position: absolute;
+  min-width: 80vw;
+}
+
+.cv__title {
+  color: #202d9d;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv__subtitle {
+  color: #202d9d;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cv__name {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
+
+.Horizontal-list {
+  margin-top: 0.5rem;
+}
+
+.Horizontal__list {
+  list-style: none;
+  text-align: center;
+}
+
+.Horizontal__list--item {
+  display: inline;
+  font-size: 1rem;
+}
+
+.Horizontal__list--item a {
+  color: blue;
+  text-decoration: none;
+}
+
+.Horizontal__list--item:not(:last-child):after {
+  content: "|";
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.cv-section {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  line-height: 110%;
+}
+
+.cv-section__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #202d9d;
+  margin-bottom: 0.1rem;
+}
+
+.cv-section__subtitle {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.secondary {
+  margin-left: 1.5rem;
+}
+
+.cv-section__bullets {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cv-section__bullet {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.3rem;
+}
+
+
+#cv-download {
+  background: url("downloadIcon.png");
+  height: 3vh;
+  width: 2vw;
+  background-size: contain;
+  float: right;
+  position: sticky;
+  right: 0;
+  top: 0;
+  /* position: relative; */
+  background-repeat: no-repeat;
+  margin: 1rem;
+  border-radius: 8px;
+  opacity: 0.5;
+  scroll-margin-top: 1rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  
+}
+
+#cv-download:hover,
+#cv-download:active {
+  cursor: pointer;
+  opacity: 1;
+}
