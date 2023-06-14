@@ -110,7 +110,6 @@ body {
   line-height: 110%;
 }
 
-
 #cv-download {
   background: url("downloadIcon.png");
   height: 2rem;
@@ -127,7 +126,6 @@ body {
   opacity: 0.6;
   scroll-margin-top: 1rem;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  
 }
 
 #cv-download:hover,
