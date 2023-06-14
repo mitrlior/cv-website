@@ -164,16 +164,16 @@ function generatePDF() {
 
   const opt = {
     callback: function (jsPdf) {
-      jsPdf.save("Test.pdf");
+      jsPdf.save("CV-Lior_Mitrany.pdf");
     },
-    margin: [10, 50, 0, 0],
+    margin: [10, 10, 0, 0],
     autoPaging: "text",
     html2canvas: {
       allowTaint: true,
-      dpi: 300,
+      dpi: 600,
       letterRendering: true,
       logging: true,
-      scale: 0.6,
+      scale: 0.5,
     },
   };
   jsPdf.html(htmlElement, opt);
